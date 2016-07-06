@@ -4,7 +4,7 @@
   "description": "a simple post-processor html build result",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "make test"
   },
   "keywords": [
     "jade",
@@ -15,9 +15,15 @@
   ],
   "author": "Felipe Rohde <fr.rohde@gmail.com> (https://twitter.com/feliperohde)",
   "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "gulp-util": "^3.0.7"
+  },
   "devDependencies": {
+    "chai": "^3.5.0",
     "cheerio": "^0.20.0",
     "gulp-util": "^3.0.7",
+    "mocha": "^2.5.3",
     "through2": "^2.0.1"
   }
 }
