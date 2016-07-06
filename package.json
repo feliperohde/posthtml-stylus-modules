@@ -16,6 +16,8 @@
   "author": "Felipe Rohde <fr.rohde@gmail.com> (https://twitter.com/feliperohde)",
   "license": "MIT",
   "devDependencies": {
+    "cheerio": "^0.20.0",
+    "gulp-util": "^3.0.7",
     "through2": "^2.0.1"
   }
 }
