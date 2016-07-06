@@ -1,0 +1,21 @@
+{
+  "name": "posthtml-stylus-modules",
+  "version": "0.0.1",
+  "description": "a simple post-processor html build result",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "jade",
+    "css",
+    "modules",
+    "class replacer",
+    "ids replacer"
+  ],
+  "author": "Felipe Rohde <fr.rohde@gmail.com> (https://twitter.com/feliperohde)",
+  "license": "MIT",
+  "devDependencies": {
+    "through2": "^2.0.1"
+  }
+}
