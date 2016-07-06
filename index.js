@@ -32,11 +32,8 @@ function posthtml(json) {
 
     if (file.isBuffer()) {
 
-      contentStr = file.contents.toString();
-      contentStrLns = contentStr.match(/[^\r\n]+/g);
-
+      //html dom object
       var $ = cheerio.load(contentStr);
-
       Object.keys(json).forEach(function (key) {
 
         //replacing classes
