@@ -19,12 +19,7 @@ function toDashCase (str) {
   return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 
 }
-// module.exports = {
-//   posthtml:  function (json) {
-//     return posthtml()
-//   }
-// };
-// plugin level function (dealing with files)
+
 function posthtml(json) {
 
   // creating a stream through which each file will pass
