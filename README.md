@@ -2,7 +2,7 @@
 posthtml-stylus-modules
 =========
 
-A small library providing utility methods to `replace`  HTML entities
+A small library providing utility methods to `replace` HTML classes and ids
 
 ## Installation
 
@@ -13,7 +13,7 @@ A small library providing utility methods to `replace`  HTML entities
   import postHtml from 'posthtml-stylus-modules';
 
   ...
-  .pipe(plugins.jade())
+  .pipe(plugins.jade(...))
   .pipe(postHtml(jsonWithCssMap))
   ...
 
@@ -28,4 +28,4 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
 
-* 0.0.2 Initial beta release
+* 0.0.3 Initial beta release

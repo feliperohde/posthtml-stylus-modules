@@ -1,21 +1,22 @@
-var should = require('chai').should(),
-    jsonSample = {
-      "someId":"_main_someId",
-      "hello":"_main_hello",
-      "world":"_main_world",
-      "wordX":"_main_wordX",
-
-
-      "someIdId":"_main_someIdId",
-      "hell":"_main_hell",
-      "stringToTest":"stringToTest"
-
-    };
-
+var should = require('chai').should();
 var assert = require('assert');
 var es = require('event-stream');
 var File = require('vinyl');
 var posthtmlstylus = require('../');
+
+var jsonSample = {
+      "someId":"someId",
+      "hello":"hello",
+      "world":"world",
+      "wordX":"wordX",
+
+
+      "someIdId":"someIdId",
+      "hell":"hell",
+      "stringToTest":"stringToTest"
+
+    };
+
 
 describe('posthtml-stylus-modules', function() {
   describe('in buffer mode', function() {
@@ -39,7 +40,7 @@ describe('posthtml-stylus-modules', function() {
         assert(file.isBuffer());
 
         // check the contents
-        assert.equal(file.contents.toString('utf8'), '<section id="_main_someId" class="foo _main_hello _main_world _main_wordX"><span> hello world!</span></section>');
+        assert.equal(file.contents.toString('utf8'), '<section id="someId" class="foo hello world wordX"><span> hello world!</span></section>');
         done();
       });
 
@@ -65,7 +66,7 @@ describe('posthtml-stylus-modules', function() {
         assert(file.isBuffer());
 
         // check the contents
-        assert.equal(file.contents.toString('utf8'), '<header id="_main_someIdId" class="foo bar baz _main_hell stringToTest"><b> another string!</b></header>');
+        assert.equal(file.contents.toString('utf8'), '<header id="someIdId" class="foo bar baz hell stringToTest"><b> another string!</b></header>');
         done();
       });
 

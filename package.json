@@ -1,6 +1,6 @@
 {
   "name": "posthtml-stylus-modules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small library providing utility methods to `replace`  HTML entities",
   "main": "index.js",
   "scripts": {
@@ -17,13 +17,12 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "cheerio": "^0.20.0",
-    "gulp-util": "^3.0.7",
-    "mocha": "^2.5.3",
-    "through2": "^2.0.1"
+    "event-stream": "^3.3.3",
+    "mocha": "^2.5.3"
   }
 }
