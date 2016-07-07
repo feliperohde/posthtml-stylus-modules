@@ -2,7 +2,7 @@
  * replace html ids and classes with build classes from json file.
  *
  * @param  {String} json
- * @return {String} html
+ * @return {Object} stream
  */
 
 

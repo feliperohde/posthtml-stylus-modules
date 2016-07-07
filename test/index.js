@@ -29,13 +29,13 @@ describe('posthtml-stylus-modules', function() {
       });
 
       // Create a prefixer plugin stream
-      var myPrefixer = posthtmlstylus(jsonSample);
+      var mypostHtml = posthtmlstylus(jsonSample);
 
       // write the fake file to it
-      myPrefixer.write(fakeFile);
+      mypostHtml.write(fakeFile);
 
       // wait for the file to come back out
-      myPrefixer.once('data', function(file) {
+      mypostHtml.once('data', function(file) {
         // make sure it came out the same way it went in
         assert(file.isBuffer());
 
@@ -55,13 +55,13 @@ describe('posthtml-stylus-modules', function() {
       });
 
       // Create a prefixer plugin stream
-      var myPrefixer = posthtmlstylus(jsonSample);
+      var mypostHtml = posthtmlstylus(jsonSample);
 
       // write the fake file to it
-      myPrefixer.write(fakeFile);
+      mypostHtml.write(fakeFile);
 
       // wait for the file to come back out
-      myPrefixer.once('data', function(file) {
+      mypostHtml.once('data', function(file) {
         // make sure it came out the same way it went in
         assert(file.isBuffer());
 
