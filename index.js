@@ -16,7 +16,7 @@ const PLUGIN_NAME = 'posthtml-stylus-modules';
 
 function toDashCase (str) {
 
-  return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+  return str.replace(/_m_/g, "--").replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 
 }
 
