@@ -46,7 +46,7 @@ function posthtml(json) {
 
         //replacing links
         $('[href="#' + toDashCase(key) + '"]')
-            .attr('href', json[key] );
+            .attr('href', "#" + json[key] );
 
       });
 
