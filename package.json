@@ -1,6 +1,6 @@
 {
   "name": "posthtml-stylus-modules",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A small library providing utility methods to `replace`  HTML entities",
   "main": "index.js",
   "scripts": {
