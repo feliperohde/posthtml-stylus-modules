@@ -45,7 +45,7 @@ function posthtml(json) {
             .attr('id', json[key] );
 
         //replacing links
-        $('[href="' + toDashCase(key) + '"')
+        $('[href="#' + toDashCase(key) + '"]')
             .attr('href', json[key] );
 
       });
