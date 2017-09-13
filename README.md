@@ -2,7 +2,7 @@
 posthtml-stylus-modules
 =========
 
-A small library providing utility methods to `replace` HTML classes and ids
+A small library providing utility methods to `replace` HTML classes and ids, ans links too
 
 ## Installation
 
@@ -25,7 +25,3 @@ A small library providing utility methods to `replace` HTML classes and ids
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
-
-## Release History
-
-* 0.0.5 Initial beta release
