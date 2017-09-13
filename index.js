@@ -15,9 +15,7 @@ var cheerio = require('cheerio');
 const PLUGIN_NAME = 'posthtml-stylus-modules';
 
 function toDashCase (str) {
-
   return str.replace(/_m_/g, "--").replace(/([a-z0-9])([A-Z0-9])/g, '$1-$2').toLowerCase();
-
 }
 
 function posthtml(json) {
@@ -45,6 +43,10 @@ function posthtml(json) {
         //replacing ids
         $('#' + toDashCase(key))
             .attr('id', json[key] );
+
+        //replacing links
+        $('[href="' + toDashCase(key) + '"')
+            .attr('href', json[key] );
 
       });
 
